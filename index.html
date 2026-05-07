@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdo Glitch Tech - Links</title>
+    <title>روابط الأدوات والفيديوهات - عبدالله أحمد</title>
     
     <style>
-        /* خلفية متغيرة الألوان ببطء */
+        /* إعدادات الخلفية والخط */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e1e2f, #2a2a40, #1e1e2f);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
+            background: linear-gradient(135deg, #1e1e2f 0%, #4e54c8 100%);
+            background-attachment: fixed;
             margin: 0;
             display: flex;
             justify-content: center;
@@ -21,12 +20,6 @@
             padding: 20px;
         }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
         .container {
             width: 100%;
             max-width: 450px;
@@ -34,39 +27,40 @@
             padding-top: 20px;
         }
 
+        /* تنسيق الصورة الشخصية */
         .profile-img {
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            border: 4px solid rgba(0, 210, 255, 0.5); /* حواف مضيئة زرقاء */
-            box-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
             margin-bottom: 15px;
             object-fit: cover;
-            transition: 0.5s;
+            transition: transform 0.3s ease;
         }
         
         .profile-img:hover {
-            transform: rotate(5deg) scale(1.1);
+            transform: scale(1.05);
         }
 
-        h1 { font-size: 26px; margin: 10px 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        .bio { font-size: 15px; opacity: 0.8; margin-bottom: 15px; }
-
-        /* عداد الزوار */
-        .visitor-counter {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 5px 15px;
-            border-radius: 20px;
-            display: inline-block;
-            font-size: 12px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255,255,255,0.1);
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+            font-weight: bold;
         }
 
+        .bio {
+            font-size: 15px;
+            opacity: 0.9;
+            margin-bottom: 20px; /* قللت المسافة هنا عشان الإعلان */
+            line-height: 1.5;
+        }
+
+        /* تنسيق قائمة الروابط */
         .links-container {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
             margin-bottom: 20px;
         }
 
@@ -74,28 +68,39 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
-            padding: 16px 20px;
+            padding: 14px 20px;
             text-decoration: none;
-            border-radius: 15px;
+            border-radius: 12px;
             font-size: 16px;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
-        /* تأثير الحركة عند مرور الماوس */
         .btn:hover {
-            background: rgba(0, 210, 255, 0.2);
+            background: rgba(255, 255, 255, 0.25);
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 210, 255, 0.4);
-            border-color: #00d2ff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            border-color: rgba(255, 255, 255, 0.5);
         }
 
-        .ad-slot { margin: 20px 0; }
-        footer { margin-top: 30px; opacity: 0.6; font-size: 12px; }
+        /* تنسيق أماكن الإعلانات */
+        .ad-slot {
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding-bottom: 20px;
+            font-size: 13px;
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
@@ -106,15 +111,20 @@
         <h1>ABDO GLITCH TECH</h1>
         <p class="bio">صانع محتوى تقني 🚀<br>أفضل الأدوات والتطبيقات في مكان واحد</p>
 
-        <div class="visitor-counter">
-            👁️ عدد المشاهدات: 
-            <img src="https://counter9.optistats.ovh/private/freecounterstat.php?c=abdoglitch" title="visitor counter" border="0">
+        <div class="ad-slot">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '0f3471c8199d24b29732f737a17ee51e',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="https://www.highperformanceformat.com/0f3471c8199d24b29732f737a17ee51e/invoke.js"></script>
         </div>
 
-        <div class="ad-slot">
-            </div>
-
-          <div class="links-container">
+        <div class="links-container">
             <a href="https://xiaomi-codes.vercel.app/" target="_blank" class="btn">موقع اكواد شاومي</a>
             <a href="https://samsung-codes.vercel.app/" target="_blank" class="btn">موقع اكواد سامسونج</a>
             <a href="https://uptoz.com/1697?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق منع تصوير شاشة الموبايل</a>
@@ -128,10 +138,20 @@
         </div>
 
         <div class="ad-slot">
-            </div>
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '0f3471c8199d24b29732f737a17ee51e',
+                    'format' : 'iframe',
+                    'height' : 50,
+                    'width' : 320,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="https://www.highperformanceformat.com/0f3471c8199d24b29732f737a17ee51e/invoke.js"></script>
+        </div>
 
         <footer>
-            صُنع بكل حماس بواسطة عبدالله &copy; 2026
+            تم التصميم بواسطة عبدالله &copy; 2026
         </footer>
     </div>
 
