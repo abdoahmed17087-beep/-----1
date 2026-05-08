@@ -29,70 +29,129 @@
         }
 
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            border: 3px solid rgba(255, 255, 255, 0.3);
             margin-bottom: 15px;
             object-fit: cover;
         }
 
         h1 { font-size: 24px; margin: 10px 0; font-weight: bold; }
-        .bio { font-size: 15px; opacity: 0.9; margin-bottom: 25px; line-height: 1.5; }
+        .main-bio { font-size: 15px; opacity: 0.9; margin-bottom: 25px; line-height: 1.5; }
 
         .links-container {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            margin-bottom: 20px;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .link-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
-            padding: 14px 20px;
+            padding: 12px 15px;
             text-decoration: none;
-            border-radius: 12px;
+            border-radius: 10px;
             font-size: 16px;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: 0.3s;
+            margin-bottom: 8px;
         }
 
         .btn:hover {
             background: rgba(255, 255, 255, 0.25);
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transform: translateY(-3px);
         }
 
-        footer { margin-top: 30px; font-size: 13px; opacity: 0.7; }
+        .desc {
+            font-size: 12.5px;
+            color: #ccc;
+            line-height: 1.4;
+            padding: 0 10px 5px 10px;
+            text-align: right;
+            margin: 0;
+        }
+
+        footer { margin: 30px 0; font-size: 13px; opacity: 0.7; }
     </style>
 </head>
 <body>
 
     <div class="container">
         <img src="WhatsApp Image 2026-04-15 at 3.26.12 PM.jpeg" alt="عبد الله أحمد" class="profile-img">
-
         <h1>ABDO GLITCH TECH</h1>
-        <p class="bio">صانع محتوى تقني 🚀<br>أفضل الأدوات والتطبيقات في مكان واحد</p>
+        <p class="main-bio">صانع محتوى تقني 🚀<br>أفضل الأدوات والتطبيقات المشروحة بالتفصيل</p>
 
         <div class="links-container">
-            <a href="https://old-games-six.vercel.app/" target="_blank" class="btn">موقع العاب زمان😍</a>
-            <a href="https://xiaomi-codes.vercel.app/" target="_blank" class="btn">موقع اكواد شاومي</a>
-            <a href="https://samsung-codes.vercel.app/" target="_blank" class="btn">موقع اكواد سامسونج</a>
-            <a href="https://uptoz.com/1697?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق منع تصوير شاشة الموبايل</a>
-            <a href="https://uptoz.com/2152?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق صنع فيديوهات بالـ AI 🤖</a>
-            <a href="https://uptoz.com/222?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق تأثير Depth Wallpaper 🖼️</a>
-            <a href="https://uptoz.com/1937?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق الترجمة بدون نت 🤩</a>
-            <a href="https://uptoz.com/298?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق تغيير الصوت 😨</a>
-            <a href="https://uptoz.com/1871?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق بديل كاب كات 👻</a>
-            <a href="https://uptoz.com/1732?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق التأكد من صحة الحديث 🕌</a>
-            <a href="https://uptoz.com/518?hpub=ga_abdo_glitch" target="_blank" class="btn">أداة الصور الذكية !! ✨</a>
+
+            <div class="link-card">
+                <a href="https://old-games-six.vercel.app/" target="_blank" class="btn">موقع العاب زمان😍</a>
+                <p class="desc">منصة متكاملة لتحميل ألعاب الكمبيوتر والبلايستيشن القديمة بروابط مباشرة وسريعة.</p>
+            </div>
+
+            <div class="link-card">
+                <a href="https://xiaomi-codes.vercel.app/" target="_blank" class="btn">موقع اكواد شاومي</a>
+                <p class="desc">موسوعة تضم جميع الأكواد السرية لفحص الهاردوير والسوفتوير في أجهزة شاومي.</p>
+            </div>
+
+            <div class="link-card">
+                <a href="https://samsung-codes.vercel.app/" target="_blank" class="btn">موقع اكواد سامسونج</a>
+                <p class="desc">دليل الأكواد المختصرة لهواتف سامسونج للدخول لخدمات الفحص المخفية وتحسين الأداء.</p>
+            </div>
+
+            <div class="link-card">
+                <a href="https://uptoz.com/1697?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق منع تصوير شاشة الموبايل</a>
+                <p class="desc">أداة أمنية تمنع أي تطبيق من التقاط صور أو فيديوهات لشاشة هاتفك لحماية خصوصيتك.</p>
+            </div>
+
+            <div class="link-card">
+                <a href="https://uptoz.com/2152?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق صنع فيديوهات بالـ AI 🤖</a>
+                <p class="desc">حول نصوصك إلى مقاطع فيديو احترافية باستخدام تقنيات الذكاء الاصطناعي المتطورة.</p>
+            </div>
+
+            <div class="link-card">
+                <a href="https://uptoz.com/222?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق تأثير Depth Wallpaper 🖼️</a>
+                <p class="desc">تطبيق مخصص لعمل خلفيات ثلاثية الأبعاد بلمسات احترافية تعطي عمقاً لشاشة الموبايل.</p>
+            </div>
+
+            <div class="link-card">
+                <a href="https://uptoz.com/1937?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق الترجمة بدون نت 🤩</a>
+                <p class="desc">أفضل قاموس للترجمة الفورية للنصوص والصور دون الحاجة للاتصال بشبكة الإنترنت.</p>
+            </div>
+
+            <div class="link-card">
+                <a href="https://uptoz.com/298?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق تغيير الصوت 😨</a>
+                <p class="desc">أداة ممتعة لتغيير نبرة صوتك إلى عدة أشكال مختلفة لاستخدامها في المقالب أو الفيديوهات.</p>
+            </div>
+
+            <div class="link-card">
+                <a href="https://uptoz.com/1871?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق بديل كاب كات 👻</a>
+                <p class="desc">برنامج مونتاج احترافي خفيف على الموبايل يوفر مميزات قوية جداً بديلة لتطبيق CapCut.</p>
+            </div>
+
+            <div class="link-card">
+                <a href="https://uptoz.com/1732?hpub=ga_abdo_glitch" target="_blank" class="btn">تطبيق التأكد من صحة الحديث 🕌</a>
+                <p class="desc">تطبيق ديني يساعدك في البحث السريع عن الأحاديث النبوية والتأكد من درجة صحتها.</p>
+            </div>
+
+            <div class="link-card">
+                <a href="https://uptoz.com/518?hpub=ga_abdo_glitch" target="_blank" class="btn">أداة الصور الذكية !! ✨</a>
+                <p class="desc">استخدم الذكاء الاصطناعي لتحسين جودة صورك القديمة وإزالة الشوائب منها بضغطة زر.</p>
+            </div>
+
         </div>
 
         <footer>
